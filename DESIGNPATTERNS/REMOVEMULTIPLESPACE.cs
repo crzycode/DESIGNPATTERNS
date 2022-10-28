@@ -9,18 +9,20 @@ namespace DESIGNPATTERNS
 {
     internal class REMOVEMULTIPLESPACE
     {
-        public static void remove()
+        public static void removemultispace()
         {
-            string sentence = "This is     a sentence   with   multiple      spaces";
-            RegexOptions options = RegexOptions.None;
-            Regex regex = new Regex("[ ]{2,}", options);
-            sentence = regex.Replace(sentence, " ");
-            string[] sep = sentence.Split(" ");
-            foreach (string s in sep)
+            var data = File.ReadAllLines(@"D:\VisualStudioProject\DESIGNPATTERNS\DESIGNPATTERNS\TextFile1.txt").ToList();
+
+            for(int i = 0; i < data.Count; i++)
             {
-                Console.WriteLine(s);
+                RegexOptions options = RegexOptions.None;
+                Regex regex = new Regex("[ ]{2,}", options);
+                data[i] = regex.Replace(data[i], " ");
             }
-            
+
+            File.WriteAllLines(@"D:\VisualStudioProject\DESIGNPATTERNS\DESIGNPATTERNS\TextFile1.txt", data);
+
+
         }
     }
 }

@@ -5,13 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoApi;
 namespace DESIGNPATTERNS
-
-
 {
  public private class : partialmethod
-    { 
-     
-    }
-
-
+ { 
+gfgf
+ manoj
+gfgf
+ }
 }

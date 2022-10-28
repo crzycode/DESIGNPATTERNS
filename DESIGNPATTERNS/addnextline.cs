@@ -6,23 +6,22 @@ using System.Threading.Tasks;
 
 namespace DESIGNPATTERNS
 {
-    internal class removelinegap
+    internal class addnextline
     {
-        public static void removelinegaper()
+        public static void addnextlines()
         {
             var data = File.ReadAllLines(@"D:\VisualStudioProject\DESIGNPATTERNS\DESIGNPATTERNS\TextFile1.txt").ToList();
             List<string> lines = new List<string>();
-
             for (int i = 0; i < data.Count; i++)
             {
-                if (data[i].Length != 0)
+                
+                lines.Add(data[i]);
+                if (data[i] == " manoj")
                 {
-                    lines.Add(data[i]);
+                    lines.Add("gfgf");
                 }
-
             }
             File.WriteAllLines(@"D:\VisualStudioProject\DESIGNPATTERNS\DESIGNPATTERNS\TextFile1.txt", lines);
-
         }
     }
 }

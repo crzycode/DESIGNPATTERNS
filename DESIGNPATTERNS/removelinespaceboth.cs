@@ -9,7 +9,7 @@ namespace DESIGNPATTERNS
 {
     internal class removelinespaceboth
     {
-        public static void removeline()
+        public static void removelinespace()
         {
             var data = File.ReadAllLines(@"D:\VisualStudioProject\DESIGNPATTERNS\DESIGNPATTERNS\TextFile1.txt").ToList();
             List<string> lines = new List<string>();
