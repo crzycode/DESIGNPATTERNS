@@ -1,15 +1,31 @@
-using System;
-[ mangal, rahul, ram ]
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoApi;
-namespace DESIGNPATTERNS
-{
- public private class : partialmethod
- { 
-gfgf
- manoj
-gfgf
- }
-}
+
+
+
+
+
+table 
+
+
+
+
+
+
+rakesh 
+
+
+
+
+[ mangal mang rahul    
+
+ rakesh  
+
+rahul ]
+
+
+
+
+from
+
+
+
+table
